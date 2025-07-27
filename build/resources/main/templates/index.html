@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Психолог</title>
+    <link th:href="@{/styles/style.css}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <img th:src="@{/images/placeholder.jpg}" alt="Фото" class="avatar">
+    <h1>Привет</h1>
+    <p>Меня зовут Камала, я практикующий психолог. Готова вас выслушать.</p>
+    <a th:href="@{/booking}">
+        <button class="primary-btn">Записаться</button>
+    </a>
+</div>
+</body>
+</html>
