@@ -1,0 +1,20 @@
+<!-- src/main/resources/templates/form.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+<h1>Заполните форму</h1>
+
+<form th:action="@{/submit}" method="post">
+    <input type="text" name="name" required placeholder="Ваше имя" />
+    <input type="text" name="phone" required placeholder="Номер для связи или ник в Телеграм" />
+    <input type="date" name="date" required />
+    <textarea name="comment" placeholder="Комментарий (необязательно)"></textarea>
+    <button type="submit">Отправить</button>
+</form>
+
+</body>
+</html>

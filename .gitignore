@@ -1,29 +1,43 @@
-# macOS системные файлы
-.DS_Store
+# Gradle
+.gradle/
+build/
 
-# Логи и временные файлы
-*.log
-*.tmp
-*.bak
-
-# Конфиденциальные файлы
-*.env
-*.key
-
-# Папки и файлы, которые явно не нужны в репо
-.Trash/
+# IntelliJ / Android Studio
 .idea/
 *.iml
-*.iws
 *.ipr
+*.iws
+out/
 
-# Node.js (если есть)
-node_modules/
+# VS Code
+.vscode/
 
-# Для IDE, если еще не учтено
+# OS
+.DS_Store
+*.swp
+
+# Java
 *.class
-*.jar
-*.war
+*.log
+
+# Logs & temp
+*.tmp
+*.bak
+*.bin
+*.lock
+
+# MacOS system files
+.Trashes
+.AppleDouble
+.LSOverride
+
+# SSH, credentials, tokens (если случайно добавились)
+*.pem
+*.key
+*.pub
+*.crt
+*.env
+
 
 # Если есть SSH ключи - НЕ КЛАДИ ИХ В РЕПО!
 .ssh/
